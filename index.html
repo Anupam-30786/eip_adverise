@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>EIP Group</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/toast.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/drive-db"></script>
+    </head>
+    <body>
+        <div id="loader">
+            
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <div class="col-md-4 brand"><img src="assets/eip_logo.jpg" style="margin-right: 10;">EIP Group</div>
+                    <div class="col-md-3 offset-4">
+                        <a id="ContactUs" class="menu">Contact Us</a>
+                        <a id="Career" class="menu" href="#">Career</a>
+                        <a id="Pricing" class="menu" href="pricing.html">Pricing</a>
+                        <a id="home" class="menu"  href="index.html">Home</a>
+                    </div>
+                    
+                </nav>
+       
+            </div>
+        </div>
+        <div class="main">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="intro">
+                </div>
+            </div>
+        </div>
+        <div class="row servicedisn">
+        
+             <div class="col-10 offset-1 service-container">   
+            </div>
+        </div>
+        </div>
+<!--
+           <div class="row">
+            <div class="col-md-8 offset-2 review">
+               <center> <div Class="row reviewpanel"></center>
+                
+                    <center><h1> review</h1></center>
+                </div>
+                    <div class="col-md-10 offset-1 customer">
+                <center>HJSKJAFJHA</center><BR>
+                SAJJAJHAGHJ<BR>
+                SANDJBSAD<BR>
+                DBSDBSAHDJAB<BR>
+            </div>
+            </div>
+            </div>  -->
+            <div id="loader"></div>
+            
+            
+            <div class="row" style="background-color: teal;">
+
+            <div id="contactus-container" class="container" style="background-color: whitesmoke;">
+              <center>  <img src="assets/eip_logo.jpg" style="width: 8%; margin-top: 5px;"></center>
+                <div style="text-align:center">
+                <h2 style="color: crimson;">Conact us</h2>
+                <p>Leave your query here</p>
+            </div>
+            <div class="row" style="align-items: center;">
+    
+            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="text" id="mail" name="mail" placeholder="email id">
+            <input type="text" id="mobile" name="mobile" placeholder="Mobile No.">
+            <select id="city" name="city">
+            </select>  
+            <textarea id="subject" name="subject" placeholder="Write your query description here within 250 words...." style="height:170px"></textarea>
+           <center> <button id ="contactussubmit">Submit</button></center>
+            </div>
+            </div>
+            </div>
+            
+            
+    <div id="snackbar"></div>
+    <div class="row review">
+             <div class ="col-md-10 offset-1 reviewpanel">
+                <center>  <img src="assets/eip_logo.jpg" style="width: 8%;"></center>
+                <div style="text-align:center">
+                <h2 style="color: crimson;">Customer Ratings</h2>
+                <button id="rateus">give your rating</button>
+                <p id="reviewstats"></p>
+                <hr style="border:3px solid #f1f1f1">
+                
+
+              
+                
+                <div id="myModal" class="modal">
+    
+                  
+                  <!-- Modal content -->
+                  <div class="modal-content"id="modalcontent">
+                    <span class="winclose">&times;</span>
+                    
+                    <div class="starrating" id="starrate">
+                      <h3>Give us star rating according to we serve you our services</h3>
+                      <input type="text" id="ratinguser" placeholder="your name" required style="height: 30px;width: 40%;float: left;margin-left: 66px;"/>
+                      <h3 style="color: red;">Rate Us</h3>
+                      <span class="fa fa-star" id="1" onmouseover="starRating(this)" onclick="saveStar(this)"></span>
+                      <span class="fa fa-star" id="2" onmouseover="starRating(this)" onclick="saveStar(this)"></span>
+                      <span class="fa fa-star" id="3" onmouseover="starRating(this)" onclick="saveStar(this)"></span>
+                      <span class="fa fa-star" id="4" onmouseover="starRating(this)" onclick="saveStar(this)"></span>
+                      <span class="fa fa-star" id="5" onmouseover="starRating(this)" onclick="saveStar(this)"></span>
+                      
+      
+                        </div>
+      
+                   
+                    <textarea id="ratingcomment" name="comment" placeholder="write your comment" style="height:170px"></textarea>
+                    <button id="submitcomment"onclick="pushRating()">submit</button>
+                  </div>
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="indexfooter">
+        <nav class="footernav">
+            
+            <center>
+                <img src="assets/eip_logo.jpg" style="width: 8%;margin-top: 10;"><br>
+            <a href="#" id="facebook" class="fa fa-facebook"></a>  
+<a href="#" id="twitter"" class="fa fa-twitter"></a>  
+
+<a href="#" id="linkedin" class="fa fa-linkedin" target="_blank"></a>  
+<a href="#" id="instagram" class="fa fa-instagram" target="_blank"></a>  
+<a href="https://www.youtube.com/watch?v=Lp7FMXWj5Os" id="youtube"class="fa fa-youtube" target="_blank"></a>  
+<a href="https://api.whatsapp.com/send?phone=919044639216" id="whatsapp" class="fa fa-whatsapp" target="_blank"></a>  <br>
+ <span style="color:grey ;margin-top:30px;"> 2020-2021</span> <br>
+ <span style="color:grey">&#169; Copyright All rights reserved with <b>EIP Group</b></span>
+
+</center> 
+        </nav>
+    </div>
+    
+    
+   
+    <script src="https://smtpjs.com/v3/smtp.js"> </script> 
+    <script src="js/city.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/index.js"></script>
+    </div>
+
+    </body>
+</html>

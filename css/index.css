@@ -1,0 +1,465 @@
+.navbar {
+    background-color: black;
+    box-shadow: 0px 5px 5px gray;
+}
+
+.navbar .brand {
+    color: green;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 4px green;
+}
+
+.navbar .brand:hover {
+    text-shadow: 0px 0px 2px white;
+}
+
+.intro {
+    box-shadow: 0px 0px 5px gray;
+    height: 80vh;
+    width: 100%;
+}
+.serviceP{
+  background-color: aliceblue;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+
+
+.header {
+    vertical-align: middle;
+    border-style: none;
+    width: 55;
+    height: 56;
+    margin-right: 5px;
+}
+
+.menu {
+    margin-left: 5px;
+    padding: 2px;
+    text-shadow: 0px 0px 4px white;
+    font-weight: bold;
+    color: whitesmoke
+}
+
+.slides {
+    background-repeat: no-repeat;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0.2;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0.2;}
+    100% {opacity: 1;}
+ }
+
+ .prev, .next{
+     position: absolute;
+     font-weight: bold;
+     background-color: rgba(0,0,0,0.0);
+     color: white;
+     top: 40%;
+     padding: 10px;
+     font-size: xx-large;
+ }
+
+ .prev {
+     left: 50
+ }
+
+ .next {
+    right: 50
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin-top: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+   .service{
+    box-shadow: 0px 0px 10px black;
+    margin-left:6.3%;
+    border: 5px solid teal;
+    margin-top: 50px;
+    height: 500px;
+    width: 200px;
+    background-color: black;
+    color:white;
+    margin-bottom: 20px;
+
+ }
+ @media screen and (max-width:800px){
+   .service-container,.intro,.slides{
+     width: 100%;
+   }
+   .service{
+     
+     width: 98%;
+     margin: auto;
+     height: 400px;
+     margin-bottom: 20px;
+   }
+   .container{
+     
+     width: 90%;
+   }
+  
+   
+ }
+ 
+ .service-container{
+    margin-top: 70px;
+    box-shadow: 0px 0px 5px black;
+    height: 100%;
+    background-color: #fdf7f7fa;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: rgba(215, 230, 230, 0.034);
+ }
+
+ .quotation {
+     font-weight: bold;
+     position: absolute;
+     bottom: 1px;
+     right: 2px;
+ }
+
+ .para {
+     margin: 2px;
+     padding: 1px;
+     color: grey;
+ }
+
+ .pricerequest{
+     position: relative;
+    
+
+ }
+ .servimg {
+    
+     box-shadow:0px 0px 2px rgb(153, 150, 150);
+ }
+ .servicedisn{
+    margin: 20px;
+    background-color:teal;
+
+ }
+ .review{
+
+     box-shadow: 0px 0px 5px black;
+     width: 100%;
+     
+     margin-top: 10PX;
+     background-color:teal;
+     
+ }
+ .reviewpanel{
+     box-shadow: 0px 0px 30px BLACK;
+     background-color: teal;
+     margin-top: 10px;
+     overflow: scroll;
+     
+ }
+     
+ 
+ .customer{
+     background-color:black;
+     box-shadow: 0px 0px 100px black;
+ }
+ .container{
+     margin-top: 20px;
+     box-shadow: 0px 0px 5px black;
+     margin-bottom: 20px;
+     background-color: skyblue;
+ }
+
+
+ /*form css*/
+
+ input[type=text], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: horizontal;
+    margin-left: 65;
+    margin-right: 65;
+ }
+ 
+button#contactussubmit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 65;
+    margin-bottom: 20px;
+  }
+  
+  button#contactussubmit:hover {
+    background-color: #45a049;
+  }
+  input[type=text]:hover{
+      background-color: wheat (245, 245, 245);
+  }
+  
+  /* Style the container/contact section 
+  .container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+  }*/
+  
+  /* Create two columns that float next to eachother 
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }*/
+  
+  /* Clear floats after the columns 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }*/
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  .loading {
+    opacity:    2; 
+    background: #000; 
+    width:      100%;
+    height:     100%; 
+    z-index:    20;
+    top:        0; 
+    left:       0; 
+    position:   fixed; 
+  }
+
+  #loader {
+      position: fixed;
+      display: none;
+      top: 50%;
+      left: 45%;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+  /* reiew
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0 auto; /* Center website 
+  max-width: 800px;  Max width 
+  padding: 20px;*/
+
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+  border: black;
+  
+
+}
+
+.checked {
+
+  color: orange;
+  font-size: 25px;
+}
+
+.fa:hover,
+.fa:focus{
+color:orange;
+
+}
+.userreviewpanel{
+  position: relative;
+   box-shadow:0px 0px 3px black;
+   height:20%;
+   background: black;
+  color: whitesmoke;
+  padding: 5pxS;
+
+}
+
+.type1 {
+  position: relative;
+  background:grey;
+  border: 3px solid rgb(105, 102, 145);
+  text-align: center;
+  font-weight: bold;
+  font-size: 30;
+  margin: 5px;
+  padding: 5px;
+  height: 10%;
+  width:10%;
+  flex: none;
+  margin-top: 35px;
+  margin-left:10px;
+  
+}
+.fafadiv{
+margin-top: 20px;
+}
+
+div[class*="fafadiv"] > span[class="fa fa-star"]:hover {
+  color:black;
+}
+
+#ContactUs:hover {
+  cursor: pointer;
+}
+
+div[class*="indexfooter"]>nav[class="footernav"]{
+  
+  
+    background-color: black;
+    box-shadow: 0px 5px 5px gray;
+    height: 60vh;
+    width: 100%; 
+    margin-top: 20px;
+
+
+}
+#twitter, #facebook, #instagram, #youtube, #google, #linkedin:hover{
+  
+  opacity:1;
+  color: #3498db;
+  
+}
+#twitter, #facebook, #instagram, #youtube, #whatsapp, #linkedin{
+  font-size: x-large;
+  border-bottom: groove blue;
+    padding: 10;
+    margin-bottom: 30;
+    margin-top: 10;
+}
+/*PRICING section*/
+#home,#career,#pricing,#ContactUs{
+  float: right;
+  padding:5;
+  
+}
+.priceinfo,.priceimg{
+
+  box-shadow: 0px 0px 10px black;
+    border: 5px solid whitesmoke;
+    margin-top: 20px;
+    height: 700px;
+    width: 200px;
+    background-color: teal;
+    color:white;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+/*table css*/
+table {
+  border-collapse:collapse;
+  border-spacing: 0 15px;
+  margin-top: 70;
+  border: 5px solid black;
+  background-color: cornsilk;
+}
+th {
+  
+  color: white;
+}
+th,
+td {
+  color: #000;
+  width: 300px;
+  text-align:center;
+  /*border: 1px solid black;*/
+  padding: 5px;
+  font-family:bold;
+  font-size:large;
+  border: 2px solid black;
+}
+.conditionapply{
+  color: red;
+}
+
+#ServiceCharge{
+  height:fit-content;
+  margin: auto;
+}
+@media screen and (max-width:800px){
+  .priceinfo {
+    width: 100%;
+    margin: auto;
+    height:fit-content;
+  }
+}
+@media screen and (max-width:800px){
+  .imgsec{
+    align-items: center;
+    height: 50;
+    width: 50;
+    
+    margin: auto;
+  }
+}
